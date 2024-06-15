@@ -24,7 +24,7 @@ function criarCard(jogador) {
   
     
     const linkDetalhes = document.createElement('a');
-    linkDetalhes.href = "/html/detalhes.html?id="+jogador.id;
+    linkDetalhes.href = "detalhes.html?id="+jogador.id;
     
     card.appendChild(linkDetalhes);
   
@@ -53,7 +53,6 @@ async function mostra_jogadores(){
     const atletas = await fetchData("https://botafogo-atletas.mange.li/2024-1/all")
     console.log(atletas)
     atletas.forEach(jogador => {
-        // display_card(jogador)
         const card = criarCard(jogador);
         container.appendChild(card);
     });

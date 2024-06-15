@@ -7,7 +7,7 @@ document.getElementById('btn_enviar').onclick = () =>{
     const entrada = document.getElementById('senha').value;
     if (hex_sha256(entrada) === alvo){
         sessionStorage.setItem('logado', '1');
-        window.location.href = '/html/jogadores.html';
+        window.location.href = 'jogadores.html';
     }else{
         senha.innerHTML = 'Senha incorreta';
         console.log("erro")
