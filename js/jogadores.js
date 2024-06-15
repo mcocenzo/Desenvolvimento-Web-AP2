@@ -33,11 +33,14 @@ function criarCard(jogador) {
     imagem.src = jogador.imagem;
     imagem.alt = jogador.nome;
     linkDetalhes.appendChild(imagem);
+
+    const saibaMais = document.createElement("button");
+  saibaMais.textContent = "Saiba mais";
+  linkDetalhes.appendChild(saibaMais);
   
-    
-    const nome = document.createElement('h2');
-    nome.textContent = jogador.nome;
-    linkDetalhes.appendChild(nome);
+  const nome = document.createElement('h2');
+  nome.textContent = jogador.nome;
+  linkDetalhes.appendChild(nome);
   
     return card;
    
