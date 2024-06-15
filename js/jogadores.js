@@ -24,7 +24,7 @@ function criarCard(jogador) {
   
     
     const linkDetalhes = document.createElement('a');
-    linkDetalhes.href = jogador.url_detalhes;
+    linkDetalhes.href = "/html/detalhes.html?id="+jogador.id;
     
     card.appendChild(linkDetalhes);
   
